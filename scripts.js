@@ -17,7 +17,7 @@ async function runTest(fileName) {
                     });
                     const endTime = performance.now();
                     const duration = (endTime - startTime)
-                    resultText.textContent = `解析 ${fileName} 条Json文件 用时 ${duration.toFixed(2)} 毫秒。`;
+                    resultText.textContent = `解析 ${fileName} 条Json文件 用时 ${duration} 毫秒。`;
 
             } catch (error) {
                 jsonList.textContent = '加载或解析 JSON 数据时出错。';
@@ -42,7 +42,7 @@ async function runCreate(cs) {
 
                     const endTime = performance.now();
                     const duration = (endTime - startTime); 
-                    resultText.textContent = `生成 ${cs} 条Json数据 用时 ${duration.toFixed(2)} 毫秒。`;
+                    resultText.textContent = `生成 ${cs} 条Json数据 用时 ${duration} 毫秒。`;
 
             } catch (error) {
                 resultText.textContent = '加载或解析 JSON 数据时出错。';
