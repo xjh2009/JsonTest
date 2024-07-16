@@ -5,7 +5,7 @@ async function runTest(fileName) {
             jsonList.innerHTML = '加载中...';
 
             try {
-                const response = await fetch(`/${fileName}.json`);
+                const response = await fetch(`./${fileName}.json`);
                 const jsonData = await response.json();
                 jsonList.innerHTML = ''; // 清空内容
                 
